@@ -1,0 +1,97 @@
+*{
+
+    font-family:  'Open Sans', sans-serif;
+}
+.sun{
+    background-color: 	#fdfaf1;
+    color: rgb(0, 0, 0);
+}
+.darkmode{
+    background-color: #121212;
+    color: rgb(226, 226, 226);
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    width: 60%;
+    padding: 20px 10px;
+    border-bottom: 1px;
+    margin: auto;
+}
+header h1{
+    text-align: center;
+}
+
+.sunicon{
+    font-size: 29px !important;
+}
+.sunicon:hover{
+    color: #e8b131;
+    cursor: pointer
+}
+.darkmode .sunicon:hover{
+    color: #f1f0aa;
+    cursor: pointer
+}
+.moonicon{
+    display: none;
+    font-size: 29px !important;
+}
+.moonicon:hover{
+    color: #e3ecba;
+    cursor: pointer
+}
+
+.boardd tr td{
+    background-color: rgb(168, 168, 168);
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+}
+.boardd {
+    margin-top: 50px !important;
+    margin: auto;
+}
+
+
+.acert{
+    background-color: #60AE3E !important;
+}
+.inword{
+    background-color: #e8b131 !important;
+}
+.darkmode .boardd tr td{
+    background-color: #e2e2e2;
+}
+.arr{
+    display: block;
+    align-items: center;
+    margin: auto !important;
+    margin-top: 60px !important;
+}
+
+.def{
+    text-align: center;
+    margin-left:    15%;
+    margin-right:   15%;
+    font-style: italic;
+    font-size: 14px;
+}
+.def:hover{
+    text-decoration: underline;
+    cursor: default;
+}
+.arr{
+    padding: 12px 20px;
+    border: 0;
+    color: #fdfaf1;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 6px;
+}
