@@ -1,6 +1,13 @@
+:root {
+    --error-red:#de362a;
+    --accept-green: #60AE3E;
+    --inword-yellow: #e8b131;
+    --wrong-grey:#8b8b8b;
+  }
+
 *{
 
-    font-family:  'Open Sans', sans-serif;
+    font-family:  'Open Sans', sans-serif ;
 }
 .sun{
     background-color: 	#fdfaf1;
@@ -45,7 +52,7 @@ header h1{
 }
 
 .boardd tr td{
-    background-color: rgb(168, 168, 168);
+    border: 2px solid #d4d4d4;
     width: 60px;
     height: 60px;
     align-items: center;
@@ -58,21 +65,20 @@ header h1{
     margin: auto;
 }
 
-
 .acert{
-    background-color: #60AE3E !important;
+    border: 2px solid var(--accept-green) !important;
+    background-color: var(--accept-green) !important;
 }
 .inword{
-    background-color: #e8b131 !important;
+    border: 2px solid var(--inword-yellow) !important;
+    background-color: var(--inword-yellow) !important;
+}
+.wrong{
+    border: 2px solid var(--wrong-grey) !important;
+    background-color: var(--wrong-grey) !important;
 }
 .darkmode .boardd tr td{
-    background-color: #e2e2e2;
-}
-.arr{
-    display: block;
-    align-items: center;
-    margin: auto !important;
-    margin-top: 60px !important;
+    background-color: #121212;
 }
 
 .def{
@@ -86,12 +92,67 @@ header h1{
     text-decoration: underline;
     cursor: default;
 }
+.send{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 .arr{
+    display: block;
+    align-items: center;
+    margin-right: 5px !important;
+    
+    margin-top: 60px !important;
     padding: 12px 20px;
     border: 0;
     color: #fdfaf1;
     text-align: center;
+    margin: 0px;
+    display: block;
+    
     font-size: 20px;
-    background-color: rgb(168, 168, 168);
+    background-color: #b6b6b6;
     border-radius: 6px;
+}
+.btnsend{
+    background-color: #b6b6b6;
+    border: 0;
+    font-size: 20px;
+    padding: 9px 18px;
+    border-radius: 6px;
+    color: #fdfaf1 ;
+}
+.btnsend:hover{
+    cursor: pointer;
+}
+#error{
+    margin-top: 28px !important;
+    text-align: center;
+    margin-left:    15%;
+    margin-right:   15%;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--error-red);
+}
+#state, #word{    
+    text-align: center;
+    margin-left:    15%;
+    margin-right:   15%;
+    font-size: 26px;
+    /* margin-bottom: 10px !important; */
+}
+#state{
+    margin-top: 45px !important;
+    margin-bottom: 5px !important;
+}
+#word{
+    margin-top: 9px !important;
+    /* margin-bottom: 5px !important; */
+}
+
+.ax{
+    color: var(--accept-green) ;
+}
+.wr{
+    color: var(--error-red);
 }

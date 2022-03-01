@@ -20,44 +20,49 @@
             <p id="def1" class="def"></p>
             <p id="def2" class="def"></p>
      </div>
+     <div>
+        <h2 id="state" ></h2>
+        <h3 id="word" ></h3>
+
+     </div>
 <table class="boardd">
     <tbody>
-        <tr>
-            <td class="acert">A</td>
-            <td class="inword">L</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
+        <tr id="cuad0">
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="cuad1">
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="cuad2">
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="cuad3">
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="cuad4">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="cuad5">
             <td></td>
             <td></td>
             <td></td>
@@ -66,10 +71,15 @@
         </tr>
     </tbody>
 </table>
-<div>
-    <input type="text" class="arr" id="areatext" maxlength="5">
+<div id="wantsend">
+    <div class="send">
+        <input type="text" class="arr" id="areatext" maxlength="5" autocomplete="off">
+        <button id="btsend" class="btnsend"><span class='material-icons'>send</span></button>
+    </div>
+    <div>
+        <p id="error"></p>
+    </div>
 </div>
-
 <script src="js/main.js"></script>
 <script src="js/api.js"></script>
  </body>
