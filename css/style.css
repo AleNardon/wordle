@@ -102,7 +102,7 @@ header h1{
     display: block;
     align-items: center;
     margin-right: 5px !important;
-    
+    outline: none;
     margin-top: 60px !important;
     padding: 12px 20px;
     border: 0;
